@@ -43,9 +43,3 @@ def bin_search(target, low, high, int_list):  # must use recursion
         return bin_search(target, mid + 1, high, int_list)
     # target is less than mid value : mid becomes new high
     return bin_search(target, low, mid - 1, int_list)
-
-
-list_val = [0, 1, 2, 3, 4, 7, 8, 9, 10]
-low = 0
-high = len(list_val) - 1
-bin_search(5, low, high, list_val)

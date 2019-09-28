@@ -10,9 +10,8 @@ class Location:
         self.lon = lon  # longitude in degrees (-180 to 180)
 
     # compares latitude and longitude for equality
-    # does not check for name
     def __eq__(self, other):
-        return type(other) == Location and self.lat == other.lat and self.lon == other.lon
+        return type(other) == Location and self.name == other.name and self.lat == other.lat and self.lon == other.lon
 
     # overrides repr method and returns new message
     def __repr__(self):
